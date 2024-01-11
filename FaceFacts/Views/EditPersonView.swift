@@ -65,7 +65,10 @@ struct EditPersonView: View {
                     }
                 }
                 
-                Button("Add a new event", action: addEvent)
+                if events.isEmpty {
+                    Button("Add a new event", action: addEvent)
+                }
+                
             }
             
         }

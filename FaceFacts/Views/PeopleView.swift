@@ -17,13 +17,20 @@ struct PeopleView: View {
     
     var body: some View {
         
-        List {
-            ForEach(people) { person in
-                NavigationLink(value: person) {
-                    Text(person.name)
+        if people.isEmpty {
+            ContentUnavailableView(
+                "No People Found",
+                systemImage: "person.slash",
+                description: Text("Add somebody with the plus button."))
+        } else {
+            List {
+                ForEach(people) { person in
+                    NavigationLink(value: person) {
+                        Text(person.name)
+                    }
                 }
+                .onDelete(perform: deletePeople)
             }
-            .onDelete(perform: deletePeople)
         }
         
     }
@@ -53,12 +60,16 @@ struct PeopleView: View {
     
 }
 
+//#Preview {
+//    do {
+//        let previewer = try Previewer()
+//        return PeopleView()
+//            .modelContainer(previewer.container)
+//    } catch {
+//        return Text("Failed to create preview: \(error.localizedDescription)")
+//    }
+//}
+
 #Preview {
-    do {
-        let previewer = try Previewer()
-        return PeopleView()
-            .modelContainer(previewer.container)
-    } catch {
-        return Text("Failed to create preview: \(error.localizedDescription)")
-    }
+    PeopleView()
 }

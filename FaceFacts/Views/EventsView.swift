@@ -17,15 +17,21 @@ struct EventsView: View {
     
     var body: some View {
         
-        List {
-            ForEach(events) { event in
-                NavigationLink(value: event) {
-                    Text(event.name)
+        if events.isEmpty {
+            ContentUnavailableView(
+                "No Events Found",
+                systemImage: "rectangle.portrait.slash",
+                description: Text("Add some with the plus button."))
+        } else {
+            List {
+                ForEach(events) { event in
+                    NavigationLink(value: event) {
+                        Text(event.name)
+                    }
                 }
+                .onDelete(perform: deleteEvent)
             }
-            .onDelete(perform: deleteEvent)
         }
-        
     }
     
     func deleteEvent(at offsets: IndexSet) {
@@ -51,12 +57,16 @@ struct EventsView: View {
     
 }
 
+//#Preview {
+//    do {
+//        let previewer = try Previewer()
+//        return EventsView()
+//            .modelContainer(previewer.container)
+//    } catch {
+//        return Text("Failed to create preview: \(error.localizedDescription)")
+//    }
+//}
+
 #Preview {
-    do {
-        let previewer = try Previewer()
-        return EventsView()
-            .modelContainer(previewer.container)
-    } catch {
-        return Text("Failed to create preview: \(error.localizedDescription)")
-    }
+    EventsView()
 }
