@@ -25,7 +25,7 @@ struct Previewer {
         // Creating a model container ourselves is a throwing operation,
         // so I've made the whole initializer throwing rather than try to handle errors here.
         
-        event = Event(name: "Dimension Jump", location: "Nottingham", date: .now)
+        event = Event(name: "CES 2024 ", location: "Las Vegas", date: .now)
         person = Person(name: "Dave Lister", email: "dave@reddwarf.com", details: "", metAt: event)
         // The container, person, and event are all stored in properties for easier external access.
         // I've made them all constants because it doesn't make sense to change them once they have been created.

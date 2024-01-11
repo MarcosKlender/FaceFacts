@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED6CB34B2B4FB58800ED8CA9 /* PeopleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CB34A2B4FB58800ED8CA9 /* PeopleTabView.swift */; };
+		ED6CB34D2B4FB74600ED8CA9 /* EventsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CB34C2B4FB74600ED8CA9 /* EventsTabView.swift */; };
+		ED6CB34F2B4FB85500ED8CA9 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CB34E2B4FB85500ED8CA9 /* EventsView.swift */; };
 		ED6E4F2E2B4064BC00512229 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6E4F2D2B4064BC00512229 /* PeopleView.swift */; };
 		EDCFE2432B3FDDA600C33CA0 /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE2422B3FDDA600C33CA0 /* EditPersonView.swift */; };
 		EDD046B62B3E72D600B9F29C /* FaceFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD046B52B3E72D600B9F29C /* FaceFactsApp.swift */; };
@@ -20,7 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED2330032B4FA8EC006A25F7 /* FaceFacts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceFacts.entitlements; sourceTree = "<group>"; };
+		ED6CB34A2B4FB58800ED8CA9 /* PeopleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTabView.swift; sourceTree = "<group>"; };
+		ED6CB34C2B4FB74600ED8CA9 /* EventsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTabView.swift; sourceTree = "<group>"; };
+		ED6CB34E2B4FB85500ED8CA9 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		ED6E4F2D2B4064BC00512229 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		EDCFE2422B3FDDA600C33CA0 /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
 		EDD046B22B3E72D600B9F29C /* FaceFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +69,6 @@
 		EDD046B42B3E72D600B9F29C /* FaceFacts */ = {
 			isa = PBXGroup;
 			children = (
-				ED2330032B4FA8EC006A25F7 /* FaceFacts.entitlements */,
 				EDD046B52B3E72D600B9F29C /* FaceFactsApp.swift */,
 				EDE97E172B43B783000A76FC /* Previewer.swift */,
 				EDE97E132B43A821000A76FC /* Models */,
@@ -96,8 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				EDD046B72B3E72D600B9F29C /* ContentView.swift */,
+				ED6CB34A2B4FB58800ED8CA9 /* PeopleTabView.swift */,
 				ED6E4F2D2B4064BC00512229 /* PeopleView.swift */,
 				EDCFE2422B3FDDA600C33CA0 /* EditPersonView.swift */,
+				ED6CB34C2B4FB74600ED8CA9 /* EventsTabView.swift */,
+				ED6CB34E2B4FB85500ED8CA9 /* EventsView.swift */,
 				EDE97E152B43AFED000A76FC /* EditEventView.swift */,
 			);
 			path = Views;
@@ -173,13 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6CB34B2B4FB58800ED8CA9 /* PeopleTabView.swift in Sources */,
 				EDD046C42B3E8D0F00B9F29C /* Person.swift in Sources */,
 				ED6E4F2E2B4064BC00512229 /* PeopleView.swift in Sources */,
 				EDD046B82B3E72D600B9F29C /* ContentView.swift in Sources */,
 				EDE97E182B43B783000A76FC /* Previewer.swift in Sources */,
 				EDD046B62B3E72D600B9F29C /* FaceFactsApp.swift in Sources */,
 				EDE97E112B43A80C000A76FC /* Event.swift in Sources */,
+				ED6CB34D2B4FB74600ED8CA9 /* EventsTabView.swift in Sources */,
 				EDCFE2432B3FDDA600C33CA0 /* EditPersonView.swift in Sources */,
+				ED6CB34F2B4FB85500ED8CA9 /* EventsView.swift in Sources */,
 				EDE97E162B43AFED000A76FC /* EditEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
