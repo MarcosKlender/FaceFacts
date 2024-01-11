@@ -12,6 +12,9 @@ import SwiftData
 
 @Model
 class Person {
+    
+    @Attribute(.externalStorage) var photo: Data?
+
     var name: String
     var email: String
     var details: String

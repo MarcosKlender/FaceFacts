@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED2330032B4FA8EC006A25F7 /* FaceFacts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceFacts.entitlements; sourceTree = "<group>"; };
 		ED6E4F2D2B4064BC00512229 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		EDCFE2422B3FDDA600C33CA0 /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
 		EDD046B22B3E72D600B9F29C /* FaceFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +64,7 @@
 		EDD046B42B3E72D600B9F29C /* FaceFacts */ = {
 			isa = PBXGroup;
 			children = (
+				ED2330032B4FA8EC006A25F7 /* FaceFacts.entitlements */,
 				EDD046B52B3E72D600B9F29C /* FaceFactsApp.swift */,
 				EDE97E172B43B783000A76FC /* Previewer.swift */,
 				EDE97E132B43A821000A76FC /* Models */,
@@ -309,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FaceFacts/FaceFacts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FaceFacts/Preview Content\"";
@@ -338,6 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FaceFacts/FaceFacts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FaceFacts/Preview Content\"";
